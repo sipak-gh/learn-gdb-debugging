@@ -1,0 +1,5 @@
+customer,item,amount
+Alice,widget,120
+"Smith, John",gadget,75
+"Acme ""Big"" Tools, Inc.",widget,300
+Bob,"gizmo, large",42

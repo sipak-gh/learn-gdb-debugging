@@ -1,0 +1,14 @@
+# trace-sum.tdb: show each number add() gets, then the totals.
+#
+#     tdb -batch -x scripts/trace-sum.tdb build/targets/sum 10 20 30
+break add
+commands
+  silent
+  reg rdi
+  continue
+end
+tbreak 22
+run
+print total
+print calls
+kill

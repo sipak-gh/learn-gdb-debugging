@@ -1,0 +1,10 @@
+alice 100
+bob 250
+carol 75
+alice 20
+frederick 300
+bob -50
+carol 25
+erin 60
+alice 5
+erin 15

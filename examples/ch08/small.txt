@@ -1,0 +1,5 @@
+bolt 120
+nut 340
+washer 500
+screw 275
+nail 900

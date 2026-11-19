@@ -1,0 +1,61 @@
+# tdb snapshots: everything is built into project/chNN/build/
+build/
+
+# Example programs (the PROGS of each examples/chNN/Makefile)
+examples/ch01/avg
+examples/ch01/reverse
+examples/ch01/avg-O2
+examples/ch01/avg-Og
+examples/ch01/avg-nodebug
+examples/ch02/ledger
+examples/ch02/trap
+examples/ch03/roster
+examples/ch03/stats
+examples/ch03/roster-nodebug
+examples/ch04/sensor
+examples/ch04/config
+examples/ch05/ages
+examples/ch05/greet
+examples/ch05/progress
+examples/ch05/queue
+examples/ch05/scores
+examples/ch05/scores-asan
+examples/ch06/stop
+examples/ch06/stop-O2
+examples/ch06/checked
+examples/ch06/report
+examples/ch07/bank
+examples/ch07/hits
+examples/ch07/linecount
+examples/ch08/inventory
+examples/ch08/csvsum
+examples/ch09/ledger
+examples/ch09/todo
+examples/ch10/meter
+examples/ch10/poller
+
+# Chapter 10: the stripped device copy, its debug file and the build-ID tree
+examples/ch10/meter.debug
+examples/ch10/device/meter
+examples/ch10/device/ready.flag
+examples/ch10/debug/
+
+# Core files and gdb/tdb logs written while following the chapters
+core
+core.*
+gdb.txt
+trace.txt
+*.o
+*.d
+
+# Variants the chapters build by hand (gcc ... -o NAME-tsan, -ubsan, -fixed, ...)
+*-fixed
+*-O2
+*-tsan
+*-ubsan
+*-wrapv
+*-lto
+*-atomic
+
+# Python caches (inventory.py and friends in Chapter 8)
+__pycache__/
